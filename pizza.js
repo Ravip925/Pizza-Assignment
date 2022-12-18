@@ -129,7 +129,6 @@ dropZone.addEventListener("dragover", function (event) {
 
 dropZone.addEventListener("drop", function (event) {
   event.preventDefault();
-  console.log('drop');
   document.getElementById("ul").style.visibility = "visible";
   ingredient_title.style.visibility = "visible";
 });
