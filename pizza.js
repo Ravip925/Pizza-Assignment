@@ -13,6 +13,7 @@ draggableElement1.addEventListener("dragover", function (e) {
     dropZone.classList.remove("pizza1");
     dropZone.classList.remove("pizza2");
     dropZone.classList.remove("pizza3");
+    greet.style.visibility = "hidden";
   }, 1000);
 });
 draggableElement1.addEventListener("touchend", function (e) {
@@ -39,6 +40,7 @@ draggableElement2.addEventListener("dragover", function (e) {
     dropZone.classList.remove("pizza1");
     dropZone.classList.remove("pizza2");
     dropZone.classList.remove("pizza3");
+    greet.style.visibility = "hidden";
   }, 1000);
 });
 draggableElement2.addEventListener("touchend", function (e) {
