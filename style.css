@@ -283,7 +283,7 @@ li {
   }
   ul{
     width: 100%;
-    height: 18vh;
+    height: 100px;
     position: relative;
     top: 100px;
     right: 0%;
@@ -291,18 +291,18 @@ li {
   }
   .ing1 {
     font-size: 15px;
-    top: 22%;
+    top: 15%;
     left: 12%;
   }
   .ing2 {
     font-size: 15px;
-    top: 22%;
+    top: 15%;
     left: 48%;
   }
   
   .ing3 {
     font-size: 15px;
-    top: 22%;
+    top: 15%;
     left: 72%;
   }
   .greet{
