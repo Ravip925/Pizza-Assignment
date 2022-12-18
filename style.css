@@ -240,51 +240,51 @@ li {
   left: 26%;
 }
 @media screen and (max-width:480px) {
-  .main{
-    overflow-y: scroll;
-    height: auto;
-    position: relative;
-  }
   h1{
+    font-size: 28px;
+    margin: 10px;
     animation: none;
   }
   h3{
-    margin-left: 22%;
+    font-size: 23px;
+    margin-left: 30%;
   }
   .base{
     width: 80%;
-    height: 30vh;
+    height: 25vh;
     flex-direction: row;
-    left: 10%;
+    left: 12%;
   }
   #draggable-element1,
   #draggable-element2{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
   .span1{
+    font-size: 15px;
     top: 0;
-    left: 15%;
+    left: 18%;
   }
   .span2{
+    font-size: 15px;
     top: 0;
-    left: 65%;
+    left: 68%;
   }
   #dropzone{
-    width: 105px;
-    height: 105px;
-    top: -10px;
-    left: 33%;
+    width: 95px;
+    height: 95px;
+    top: -20px;
+    left: 36%;
   }
   .ingredient-title{
-    top: 90%;
-    left: 1%;
+    top: 88%;
+    left: -3%;
   }
   ul{
     width: 100%;
     height: 20vh;
     position: relative;
-    top: 120px;
+    top: 70px;
     right: 0%;
     flex-direction: row;
   }
@@ -305,8 +305,9 @@ li {
     left: 72%;
   }
   .greet{
-  font-size: 28px;
-  top: 75%;
-  left: 0%;
+  width: 55%;
+  font-size: 25px;
+  top: 56%;
+  left: -5%;
   }
 }
