@@ -56,7 +56,7 @@ h3 {
 
 .greet {
   position: absolute;
-  top: 75%;
+  top: 86%;
   left: 26%;
   visibility: hidden;
 }
@@ -105,15 +105,37 @@ h3 {
   background-color: brown;
   background-image: url('./img/pizza-base1.png');
   background-size: cover;
+  border: 5px dashed orange;
+  animation: scale 4s linear infinite;
 }
 
 .base2 {
   background-color: brown;
   background-image: url('./img/pizza-base2.png');
   background-size: cover;
+  border: 5px dashed orange ;
+  animation: scale 4s linear infinite;
+}
+@keyframes scale { 
+  50%{
+    transform: scale(1.1);
+  }
+}
+.base1:active{
+  animation: spin 10s linear infinite;
+}
+.base2:active{
+  transition: 1.5s linear ease;
+  animation: spin 10s linear infinite;
 }
 
-#dropzone {
+@keyframes spin { 
+  100% { 
+    transform: rotateZ(360deg);
+  }
+}
+
+.dropzone {
   border: 5px groove silver;
   width: 205px;
   height: 205px;
@@ -130,28 +152,37 @@ h3 {
 .add1 {
   background-image: url('./img/pizza-base1.png');
   background-size: cover;
+  background-color: #DE3163;
+  border: 5px dashed rgb(230, 219, 9);
+  animation: rotate-scale-up 0.8s linear;
 }
 
 .add2 {
   background-image: url('./img/pizza-base2.png');
   background-size: cover;
+  background-color: #DE3163;
+  border: 5px dashed rgb(230, 219, 9);
+  animation: rotate-scale-up2 0.8s linear;
 }
 
 .pizza1 {
   background-image: url('./img/pizza-1.png');
   background-size: cover;
+  animation: rotate-scale-up3 0.8s linear;
 }
 
 .pizza2 {
   background-image: url('./img/pizza-3.png');
   background-size: cover;
   background-position: center;
+  animation: rotate-scale-up4 0.8s linear;
 }
 
 .pizza3 {
   background-image: url('./img/pizza-2.png');
   background-size: cover;
   background-position: center;
+  animation: rotate-scale-up5 0.8s linear;
 
 }
 
@@ -239,6 +270,71 @@ li {
   top: 66%;
   left: 26%;
 }
+
+@keyframes rotate-scale-up {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-scale-up2 {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up3 {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up4 {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up5 {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width:480px) {
   h1{
     font-size: 28px;
@@ -259,6 +355,7 @@ li {
   #draggable-element2{
     width: 90px;
     height: 90px;
+    border: 3px solid #DE3163;
   }
   .span1{
     font-size: 15px;
@@ -310,5 +407,62 @@ li {
   font-size: 25px;
   top: 350px;
   left: -5%;
+  }
+
+  @keyframes rotate-scale-up {
+    0% {
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      transform: scale(1.2) rotateZ(180deg);
+    }
+    100% {
+      transform: scale(1) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-scale-up2 {
+    0% {
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      transform: scale(1.2) rotateZ(180deg);
+    }
+    100% {
+      transform: scale(1) rotateZ(360deg);
+    }
+  }
+  @keyframes rotate-scale-up3 {
+    0% {
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      transform: scale(1.2) rotateZ(180deg);
+    }
+    100% {
+      transform: scale(1) rotateZ(360deg);
+    }
+  }
+  @keyframes rotate-scale-up4 {
+    0% {
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      transform: scale(1.2) rotateZ(180deg);
+    }
+    100% {
+      transform: scale(1) rotateZ(360deg);
+    }
+  }
+  @keyframes rotate-scale-up5 {
+    0% {
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      transform: scale(1.2) rotateZ(180deg);
+    }
+    100% {
+      transform: scale(1) rotateZ(360deg);
+    }
   }
 }
